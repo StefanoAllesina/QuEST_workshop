@@ -26,6 +26,15 @@ knitr::opts_chunk$set(
 
 # History of the paper
 
+The current way of publishing research as scientific articles has been evolving over the past few centuries:
+
+- First journal in 1665 *Philosophical Transactions of the Royal Society*; rudimentary editorial review
+- Books continued to dominate until 19th century, with physical sciences transitioning to journal-dominated
+- External reviewers started sometimes in the 19th century, but became customary much later.
+- Einstein, who had submitted to *Physical Reviews* in 1935: "We (Mr. Rosen and I) had sent you our manuscript for publication and had not authorised you to show it to specialists before it is printed. I see no reason to address the – in any case erroneous – comments of your anonymous expert. On the basis of this incident I prefer to publish the paper elsewhere."
+- Right now: Editor (or Deputies) sift through submissions; assign to a specialist editor (typically, member of the Editorial Board) who select 2-4 reviewers. 
+- Open access, published reviews, accompanying code and data, registered experiments, reproducible papers are contemporary inventions.
+
 # Common advice on writing papers
 
 # What works for me
