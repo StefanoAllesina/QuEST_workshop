@@ -30,20 +30,20 @@ centuries:
     mentioned in the first papers of these philosophical
     transactions*](https://royalsocietypublishing.org/doi/10.1098/rstl.1665.0015)
     ).
-  - From 1753 papers for *PTRS* were read by a fellow at a Society
-    meeting, and considered by a Committee on Papers: *“There were four
-    possible verdicts: a paper might be printed, rejected, consideration
-    of it deferred to a future meeting, or referred to someone more
-    expert – in which case the Committee could call upon an ordinary
-    member of the Society, who would sit in on the relevant meeting and
-    vote not just on the specific paper he’d been called to give an
-    opinion on but on all papers considered at that meeting. (This was
-    not very widely applied, but it is the first instance of provision
-    for peer review being written into the statutes of the Society).”*
-    (from
+  - Starting in 1753, papers for *PTRS* were read by a fellow at a
+    Society meeting, and considered by a Committee on Papers: *“There
+    were four possible verdicts: a paper might be printed, rejected,
+    consideration of it deferred to a future meeting, or referred to
+    someone more expert – in which case the Committee could call upon an
+    ordinary member of the Society, who would sit in on the relevant
+    meeting and vote not just on the specific paper he’d been called to
+    give an opinion on but on all papers considered at that meeting.
+    (This was not very widely applied, but it is the first instance of
+    provision for peer review being written into the statutes of the
+    Society).”* (from
     [here](https://royalsociety.org/blog/2015/03/philosophical-transactions-the-early-years/)).
   - Books continued to dominate until 19th century, with physical
-    sciences transitioning to journal-dominated.
+    sciences being the first to transition to journal-dominated.
   - External, anyonymous reviews started sometimes in the 19th century,
     but became customary much later.
   - Einstein, who had submitted to *Physical Reviews* in 1935: *“We
@@ -52,10 +52,11 @@ centuries:
     printed. I see no reason to address the – in any case erroneous –
     comments of your anonymous expert. On the basis of this incident I
     prefer to publish the paper elsewhere.”*
-  - Right now: Editor (or Deputies) sift through submissions; assign to
-    a specialist editor (typically, member of the Editorial Board) who
-    select 2-4 reviewers. Outcomes: accept, minor revisions, major
-    revisions, reject (with or without prejudice).
+  - Right now: Editor (or Deputies) sift through submissions
+    (desk-rejections are common); assign to a specialist editor
+    (typically, member of the Editorial Board), who selects 2-4
+    reviewers. Outcomes: accept, minor revisions, major revisions,
+    reject (with or without prejudice).
   - Some special cases: Watson and Crick paper on the structure of DNA
     [was not reviewed](https://www.nature.com/articles/426119b.pdf)
     before publication.
@@ -112,8 +113,8 @@ Just looking at “10 simple rules” PLoS CB:
   - Extensively document what you’re doing (`RMarkDown`, `Jupyter
     notebook`, literate programming).
   - Start from the Supplementary information.
-  - Writing as “carving” vs. building. *“I saw the angel in the marble
-    and carved until I set him free.”* — Michelangelo
+  - Writing as “carving” vs. “building”. (*“I saw the angel in the
+    marble and carved until I set him free.”* — Michelangelo)
 
 # Pet peeves and best practices
 
@@ -143,16 +144,16 @@ Weinberger, Evans & Allesina, 2015, [Ten Simple (Empirical) Rules for
 Writing
 Science](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004205)
 
-Is the advice given to scientist good?
+Is the advice given to scientists any good?
 
   - Take 1M abstracts from a variety of disciplines
-  - Take citations as a proxy for readership
-  - Measure features (e.g., length, active vs. passive, how many words
-    are “simple”)
+  - Count citations (as a proxy for readership)
+  - Measure features of the abstract (e.g., length, active vs. passive,
+    how many words are “simple”)
   - Use z-scores (to account for differences in journals)
   - Build a linear model to account for year of publication, journal,
     discipline, number of authors, paper length
-  - Do features improve number of citations?
+  - Do certain features correlate with the number of citations?
 
 <p align="center">
 
@@ -170,7 +171,7 @@ comma-separated, with headers specifying the content of each column:
   - `title` the title of the document
   - `year` the publication year
   - `num_citations` number of citations received (Scopus data)
-  - `num_views` number of views for the html version of the document
+  - `num_views` number of views for the html/pdf version of the document
   - `document_type` type of document (see below)
   - `num_authors` number of authors
   - `num_references` number of references cited in the document
@@ -248,7 +249,7 @@ pl_cit1
 
 <img src="index_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
 
-Note the very broad, skewed distribution. To model citations, is
+Note the very broad, skewed distribution. To model citations, it is
 therefore convenient to transform the data. In particular, plotting
 `log(num_citations + 1)`, we obtain:
 
@@ -276,7 +277,7 @@ pl_view1
 
 <img src="index_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
-and the transformation has a similar effect
+and the transformation has a similar effect:
 
 ``` r
 pl_view3
@@ -342,7 +343,7 @@ pl_num_figs
 <img src="index_files/figure-gfm/unnamed-chunk-12-2.png" style="display: block; margin: auto;" />
 
 While the proportion of articles containing several equations has been
-raising steadily:
+growing steadily:
 
 ``` r
 pl_num_eqn
@@ -401,16 +402,16 @@ linear combination of the predictors, and an error term. Examples (in
 constant rate by year)
 
 `log(num_citations + 1) ~ as.factor(year) + num_authors` (fit each year
-independently, assumes citations change in an orderly exponential
+independently, assumes citations change in an orderly, exponential
 \[i.e., the log is linear\] way with the number of authors; you might
 want to bin the number of authors and use it as a factor)
 
 The model can be made as complex as needed.
 
   - **Pros:** well-studied, quick to compute, excellent diagnostics.
-  - **Cons:** need careful transformation of responses; model selection
-    to choose among several competing models; changes in order and
-    detailed implementation of predictors can change result.
+  - **Cons:** need careful transformation of response variable; model
+    selection to choose among several competing models; changes in order
+    and detailed implementation of predictors can change result.
 
 ### Randomizations
 
