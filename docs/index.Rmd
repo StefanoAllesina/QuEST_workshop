@@ -196,7 +196,7 @@ and the transformation has a similar effect:
 pl_view3
 ```
 
-The typical number of authors per document increased slightly over the years:
+The typical number of authors per document increased slightly over the years ([record holder](https://journals.plos.org/ploscompbiol/article/authors?id=10.1371/journal.pcbi.1004274)):
 
 ```{r}
 pl_au
@@ -208,13 +208,13 @@ And the proportion of articles authored by women about doubled over 15 years:
 pl_gender
 ```
 
-International collaborations became more frequent:
+International collaborations became more frequent ([record holder](https://journals.plos.org/ploscompbiol/article/authors?id=10.1371/journal.pcbi.1007976)):
 
 ```{r}
 pl_countries
 ```
 
-The number of words in the abstract has remained about constant:
+The number of words in the abstract has remained about constant ([record holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000331)):
 
 ```{r}
 pl_abs_len
@@ -226,14 +226,14 @@ The proportion of simple words in the abstract has also remained quite constant:
 pl_simple_words
 ```
 
-The number of references and figures has been constant as well:
+The number of references and figures has been constant as well ([record holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004828)):
 
 ```{r}
 pl_num_refs
 pl_num_figs
 ```
 
-While the proportion of articles containing several equations has been growing steadily:
+While the proportion of articles containing several equations has been growing steadily ([record holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005691)):
 
 ```{r}
 pl_num_eqn

@@ -286,7 +286,8 @@ pl_view3
 <img src="index_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
 The typical number of authors per document increased slightly over the
-years:
+years ([record
+holder](https://journals.plos.org/ploscompbiol/article/authors?id=10.1371/journal.pcbi.1004274)):
 
 ``` r
 pl_au
@@ -303,7 +304,8 @@ pl_gender
 
 <img src="index_files/figure-gfm/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
 
-International collaborations became more frequent:
+International collaborations became more frequent ([record
+holder](https://journals.plos.org/ploscompbiol/article/authors?id=10.1371/journal.pcbi.1007976)):
 
 ``` r
 pl_countries
@@ -311,7 +313,8 @@ pl_countries
 
 <img src="index_files/figure-gfm/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
 
-The number of words in the abstract has remained about constant:
+The number of words in the abstract has remained about constant ([record
+holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000331)):
 
 ``` r
 pl_abs_len
@@ -328,7 +331,8 @@ pl_simple_words
 
 <img src="index_files/figure-gfm/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
-The number of references and figures has been constant as well:
+The number of references and figures has been constant as well ([record
+holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004828)):
 
 ``` r
 pl_num_refs
@@ -343,7 +347,8 @@ pl_num_figs
 <img src="index_files/figure-gfm/unnamed-chunk-12-2.png" style="display: block; margin: auto;" />
 
 While the proportion of articles containing several equations has been
-growing steadily:
+growing steadily ([record
+holder](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005691)):
 
 ``` r
 pl_num_eqn
