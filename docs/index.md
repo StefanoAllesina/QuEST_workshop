@@ -3,18 +3,6 @@ A Skeptic’s Guide to Scientific Writing
 **Stefano Allesina**
 QuEST Workshop, U. Vermont, Apr 2021
 
-  - [History of the paper](#history-of-the-paper)
-  - [Common advice on writing papers](#common-advice-on-writing-papers)
-  - [What works for me](#what-works-for-me)
-  - [Pet peeves and best practices](#pet-peeves-and-best-practices)
-  - [Being a skeptic](#being-a-skeptic)
-  - [Have some fun with real data](#have-some-fun-with-real-data)
-      - [Notes on data](#notes-on-data)
-      - [Taking a peek](#taking-a-peek)
-      - [Choose your own adventure](#choose-your-own-adventure)
-      - [A Choice of Weapons](#a-choice-of-weapons)
-  - [Homework](#homework)
-
 # History of the paper
 
 The way of publishing research has been evolving over the past few
@@ -113,7 +101,7 @@ Just looking at “10 simple rules” PLoS CB:
   - Extensively document what you’re doing (`RMarkDown`, `Jupyter
     notebook`, literate programming).
   - Start from the Supplementary information.
-  - Writing as “carving” vs. “building”. (*“I saw the angel in the
+  - Writing as “carving” vs. “building”. (*“I saw the angel in the
     marble and carved until I set him free.”* — Michelangelo)
 
 # Pet peeves and best practices
@@ -153,7 +141,8 @@ Is the advice given to scientists any good?
   - Use z-scores (to account for differences in journals)
   - Build a linear model to account for year of publication, journal,
     discipline, number of authors, paper length
-  - Do certain features correlate with the number of citations?
+  - Do certain features correlate with the number of
+citations?
 
 <p align="center">
 
@@ -182,9 +171,9 @@ comma-separated, with headers specifying the content of each column:
   - `num_words_title` number of words in the title
   - `num_words_abstract` number of words in the abstract
   - `prop_words_abs` proportion of distinct words in the abstract that
-    are found in a list of words used for spell-checking (\~0.5M words)
+    are found in a list of words used for spell-checking (~0.5M words)
   - `prop_simple_words_abs` proportion of distinct words in the abstract
-    that are found in a list of words used in simplified English (\~2K
+    that are found in a list of words used in simplified English (~2K
     words)
   - `first_au_F` probability that first author is a woman (see below)
   - `last_au_F` probability that last (senior) author is a woman (see
@@ -241,7 +230,8 @@ writing. Just a few basic visualizations:
 source("../data_viz/simple_visualizations.R")
 ```
 
-Distribution of citations:
+Distribution of
+citations:
 
 ``` r
 pl_cit1
@@ -251,7 +241,8 @@ pl_cit1
 
 Note the very broad, skewed distribution. To model citations, it is
 therefore convenient to transform the data. In particular, plotting
-`log(num_citations + 1)`, we obtain:
+`log(num_citations + 1)`, we
+obtain:
 
 ``` r
 pl_cit2
@@ -261,7 +252,8 @@ pl_cit2
 
 Note the many documents with zero citations—these are mostly editorials,
 errata, etc. Considering only `Article`, we find Gaussian-looking
-distributions (note that 2020 and 2021 are excluded):
+distributions (note that 2020 and 2021 are
+excluded):
 
 ``` r
 pl_cit3
@@ -269,7 +261,8 @@ pl_cit3
 
 <img src="index_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
-Similarly, the number of views is highly skewed:
+Similarly, the number of views is highly
+skewed:
 
 ``` r
 pl_view1
@@ -277,7 +270,8 @@ pl_view1
 
 <img src="index_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
-and the transformation has a similar effect:
+and the transformation has a similar
+effect:
 
 ``` r
 pl_view3
@@ -440,3 +434,7 @@ significant.
 Analyze the provided data, guided by an hypothesis on what would make
 for an impactful paper. If you share an `Rmd` file with me, I can
 publish it on the website for next week.
+
+An
+[example](https://stefanoallesina.github.io/QuEST_workshop/examples/correlation_gender_authors),
+looking at homophily in co-authorship.
