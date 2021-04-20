@@ -284,4 +284,4 @@ Say that we want to probe whether papers with a female first-author accrue more 
 
 Analyze the provided data, guided by an hypothesis on what would make for an impactful paper. If you share an `Rmd` file with me, I can publish it on the website for next week.
 
-
+An example, looking at homophily in co-authorship.
